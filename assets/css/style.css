@@ -13,6 +13,28 @@ html, body {
   font-weight: 400;
 }
 
+/* CAROUSEL */
+#demo {height: 100vh;
+      min-height: 768px !important;
+      width: 100% !important;
+
+}
+
+.carousel_image {
+  height: 100vh;
+  width: 100% !important;
+  min-height: 768px !important;
+    display: flex;
+    overflow: hidden;
+    align-items: center !important;
+    margin: 0 !important
+}
+
+.carousel-caption {
+  margin-bottom: 50vh;
+}
+/* END OF CAROUSEL */
+
 #nav1 {
   position: fixed;
   top: 0;
@@ -25,7 +47,9 @@ html, body {
   box-shadow: 0 0 8px rgba(0,0,0,0.6);
   z-index: 1000;
 }
-
+iframe {
+  pointer-events: none;
+}
 #nav1 a {
   display: block;
   padding: 10px 10px;
@@ -145,7 +169,7 @@ section {
   min-height: 768px !important;
 }
 #contact {
-  background-image: url("images/contact_us.jpg");
+  background-image: url("https://m5c6spiptu-flywheel.netdna-ssl.com/wp-content/uploads/2012/05/Fotolia-Gavel-and-Scales.jpg");
   width:100%;
   height: 100vh;
   min-height: 768px !important;
