@@ -14,7 +14,9 @@ html, body {
 }
 
 /* CAROUSEL */
-#demo {height: 100vh;
+#demo {
+ 
+  height: 70vh;
       min-height: 768px !important;
       width: 100% !important;
 
@@ -32,21 +34,10 @@ html, body {
 
 .carousel-caption {
   margin-bottom: 50vh;
+  z-index: 105;
 }
 /* END OF CAROUSEL */
 
-#nav1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #333;
-  margin: 0;
-  padding: 15px;
-  list-style: none;
-  border-radius: 0 0 10px 0;
-  box-shadow: 0 0 8px rgba(0,0,0,0.6);
-  z-index: 1000;
-}
 iframe {
   pointer-events: none;
 }
@@ -56,10 +47,6 @@ iframe {
   color: #fff;
 }
 
-#nav1 a:hover {
-  color: #ff0;
-}
- 
 
 body { background: none;
   padding: 0;
@@ -67,7 +54,7 @@ body { background: none;
   font-family: "Calibri Light", sans-serif !important;
 }
 
-#header {
+/* #header {
   width: 100%;
   height: 35px;
   position: absolute;
@@ -75,7 +62,7 @@ body { background: none;
   top:0px;
   background-color: black;
   
-}
+} */
 
 #welcome {
   height: 100vh;
@@ -87,8 +74,10 @@ body { background: none;
 
 
 /*  NAVBAR */
+
+
 .navbar-brand {
-  font-size: 3em !important;
+  font-size: 2.5em !important;
   font-weight: bold;
   color: white !important;
   margin-right: 6% !important;
@@ -99,7 +88,7 @@ nav {
     width:100% !important;
     height: 70px !important;
     position: absolute !important;
-    top: 35px !important;
+    top: 0px !important;
     text-align: right;
     margin-left: auto;
     z-index: 10;
@@ -116,7 +105,7 @@ a.nav-link {
   -webkit-transition: 1s ease;
   transition: 1s ease;
   color: white !important;
-  font-size: 1.1em;
+  font-size: 0.7em;
   padding-top: 20px;
 }
 
@@ -127,6 +116,30 @@ div.dropdown-multicol{
 div.dropdown-row>a.dropdown-item{
   display:inline-block;
   width: 32%;
+}
+ 
+/* Side Nav bar */
+#nav1 a:hover {
+  color: #ff0;
+}
+ 
+
+.navbar-custom {
+    background-color: black !important;
+}
+
+
+#nav1 {
+  position: fixed;
+  top: 15vh;
+  left: 0;
+  background: #333;
+  margin: 0;
+  padding: 2px;
+  list-style: none;
+  border-radius: 0 0 10px 0;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  z-index: 1000;
 }
  
 
@@ -158,20 +171,27 @@ section {
   min-height: 768px !important;
   color: white;
 }
-
+#logo {
+  font-size: 1.8em;
+  font-weigth: bold;
+  color: red;
+  position: relative;
+  top:  8px;
+}
 #services {
   height: 100vh;
   min-height: 768px !important;
   width: 100%;
 }
 #news {
-  height: 100vh;
+  height: auto;
+  padding-bottom: 5vh;
   min-height: 768px !important;
 }
 #contact {
   background-image: url("https://m5c6spiptu-flywheel.netdna-ssl.com/wp-content/uploads/2012/05/Fotolia-Gavel-and-Scales.jpg");
   width:100%;
-  height: 100vh;
+  height: auto;
   min-height: 768px !important;
   background-size: 100%;
 }
@@ -254,9 +274,18 @@ img.card-img-top.round_image{
 .black {
     color: black !important;
 }
+.banner {
 
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 
 /* Images and Logos */
+
+
 .moreless {
   display: none;
     font-size: 2em !important;
@@ -332,20 +361,70 @@ span.r{
     margin: 0 auto;
 
 }
+ 
 .news_row {
   height: 400px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+.news_row1 {
+  height: 70%;
+  margin-bottom: 20px;
 }
 .news_image {
     height: 90%;
     width: 80% !important;
     margin: 0 auto;
 }
-
+.contact_image {
+  height: 100%;
+    width: 90% !important;
+    margin: 0 auto;
+  margin-top: 30px;
+}
+  #background{
+    position: relative;
+    top:0;
+    height: 100vh;
+    min-height:768px;
+    z-index:8;
+    background-color: black;
+    opacity: 0.3;
+}
 .wrapper_for_news {
 
   width: 90%;
   margin: 0 auto;
-
 }
 .justified {text-align: justify}
+
+#footer {
+  width: 100%;
+  height: 45px;
+  position: relative;
+  z-index: 100;
+  bottom:  25px;
+  background-color: black;
+  color:white;
+  padding-left: 15rem;
+}
+#header {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  z-index: 9;
+  background-color: black;
+  color:white;
+  padding-left: 15rem;
+}
+
+.no_overflow {
+  overflow: hidden;
+  width: 90%;
+}
+.address {
+  padding: 20px !important;
+}
+
+.red {
+  color: red !important;
+}
